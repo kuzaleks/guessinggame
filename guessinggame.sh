@@ -3,7 +3,7 @@
 
 # Function implements the "guessinggame" logic.
 function guessinggame {
-    local items_total=$(ls | wc -l)
+    local items_total=$(find . -depth 1 -type f | wc -l)
     echo -n "Try to guess the correct number of files in this directory: "
     read input
     while [[ ! $input -eq $items_total ]]; do
