@@ -1,7 +1,7 @@
 
 all: README.md
 
-README.md:
+README.md: guessinggame.sh
 	echo "# Guessing Game Project" > README.md
 	echo "## Created `date`" >> README.md
 	echo "## guessinggame.sh consists of \
